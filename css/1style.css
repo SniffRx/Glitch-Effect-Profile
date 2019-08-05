@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css?family=Aldrich");
+body {
+  background-color: #1b1b1b;
+  text-align: center;
+}
+body h1 {
+  margin-top: 150px;
+}
+
+.glitch {
+  font-family: 'Aldrich', sans-serif;
+  font-size: 70px;
+  position: relative;
+  white-space: nowrap;
+  margin: 0 auto;
+  color: #ffffff;
+}
+
+.glitch::before, .glitch::after {
+  background-color: #1b1b1b;
+  color: #ffffff;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate-reverse;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  clip: rect(0, 9999px, 0, 0);
+  content: attr(data-text);
+}
+
+.glitch::before {
+  left: 3.5px;
+  text-shadow: 1.75px 0 #00ffea;
+  animation: glitch-animation 5s infinite linear;
+}
+
+.glitch::after {
+  left: 1.4px;
+  text-shadow: -1.75px 0 #fe3a7f;
+  animation: glitch-animation 4s infinite linear;
+}
+
+@keyframes glitch-animation {
+  0% {
+    clip: rect(24.5614035088px, 9999px, 34.3137254902px, 0);
+  }
+  5% {
+    clip: rect(7.700770077px, 9999px, 42.9447852761px, 0);
+  }
+  10% {
+    clip: rect(30.1724137931px, 9999px, 17.5px, 0);
+  }
+  15% {
+    clip: rect(28.8065843621px, 9999px, 56px, 0);
+  }
+  20% {
+    clip: rect(42.1686746988px, 9999px, 16.8269230769px, 0);
+  }
+  25% {
+    clip: rect(23.8095238095px, 9999px, 38.4615384615px, 0);
+  }
+  30% {
+    clip: rect(60.3448275862px, 9999px, 49.2957746479px, 0);
+  }
+  35% {
+    clip: rect(14px, 9999px, 14px, 0);
+  }
+  40% {
+    clip: rect(2.3333333333px, 9999px, 1.75px, 0);
+  }
+  45% {
+    clip: rect(17.5px, 9999px, 46.357615894px, 0);
+  }
+  50% {
+    clip: rect(40px, 9999px, 69.3069306931px, 0);
+  }
+  55% {
+    clip: rect(3.5px, 9999px, 32.2580645161px, 0);
+  }
+  60% {
+    clip: rect(62.5px, 9999px, 21.021021021px, 0);
+  }
+  65% {
+    clip: rect(37.8378378378px, 9999px, 18.9189189189px, 0);
+  }
+  70% {
+    clip: rect(50.7246376812px, 9999px, 70px, 0);
+  }
+  75% {
+    clip: rect(7px, 9999px, 5.8333333333px, 0);
+  }
+  80% {
+    clip: rect(12.6126126126px, 9999px, 56px, 0);
+  }
+  85% {
+    clip: rect(35px, 9999px, 39.5480225989px, 0);
+  }
+  90% {
+    clip: rect(30.1724137931px, 9999px, 34.3137254902px, 0);
+  }
+  95% {
+    clip: rect(23.102310231px, 9999px, 14px, 0);
+  }
+  100% {
+    clip: rect(7px, 9999px, 7px, 0);
+  }
+}
+
+div.error1 {
+  position: relative;/**/
+  top: 30%;
+  margin-top: -8em;
+  width: 100%;
+  text-align: center;
+}
